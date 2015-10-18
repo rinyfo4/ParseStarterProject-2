@@ -4,6 +4,9 @@
 //  Copyright 2011-present Parse Inc. All rights reserved.
 //
 
+//MAIN COPY **********************************************************
+
+
 import UIKit
 
 import Bolts
@@ -28,13 +31,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Enable storing and querying data from Local Datastore. 
         // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
         
-        PFTwitterUtils.initializeWithConsumerKey("k2e9FocQHsreZ79ZjHBiXKhEj", consumerSecret:"rI1FCuvMPqdTNCOGAt8dI5gK3OT2TulDJUYl8PLzkDUm0AuoLP")
         
         Parse.enableLocalDatastore()
-
-        Parse.setApplicationId("yRKcTHBju39OcqqqHfiOK2lHTuimnsztOUZmcAUu",
-            clientKey: "Fj6inkNbJOAHebLQ5dBmBc5IHSPalEReWDvKMw9Q")
-
+        Parse.setApplicationId("XNudlS68T8DnMZiHd4KIfGd4QjncHqIOzwpdwD14",
+            clientKey: "fxniumJL5cs35RQRXpCf6uUYIy2V14fYTJ89NDXf")
+        
+        PFTwitterUtils.initializeWithConsumerKey("k2e9FocQHsreZ79ZjHBiXKhEj", consumerSecret:"rI1FCuvMPqdTNCOGAt8dI5gK3OT2TulDJUYl8PLzkDUm0AuoLP")
+        
+        
         PFUser.enableAutomaticUser()
 
         let defaultACL = PFACL();

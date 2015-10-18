@@ -11,22 +11,54 @@ import Parse
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func logInTwtr(sender: AnyObject) {
+    
         
         PFTwitterUtils.logInWithBlock {
             (user: PFUser?, error: NSError?) -> Void in
             if let user = user {
                 if user.isNew {
                     print("User signed up and logged in with Twitter!")
+                    
+                    self.performSegueWithIdentifier("showSignInScreen", sender: self)
+
                 } else {
                     print("User logged in with Twitter!")
+                    self.performSegueWithIdentifier("showSignInScreen", sender: self)
+
                 }
             } else {
                 print("Uh oh. The user cancelled the Twitter login.")
             }
         }
+
+    
+    }
+   
+    override func viewDidAppear(animated: Bool) {
+                
+        if PFUser.currentUser() != nil {
+            
+            
+            self.performSegueWithIdentifier("loggedIn", sender: self)
+            
+        }
+        
+        if let username = PFUser.currentUser()?.username {
+         
+            self.performSegueWithIdentifier("showSignInScreen", sender: self)
+            
+        }
+        
+        
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+   
     }
 
     override func didReceiveMemoryWarning() {

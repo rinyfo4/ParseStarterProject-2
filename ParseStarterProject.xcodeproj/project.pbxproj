@@ -20,6 +20,12 @@
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
 		81BA81811A49E10C00E65899 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81801A49E10C00E65899 /* ParseUI.framework */; };
+		A11DCDD11BD293A5005C37E3 /* twtrLogIn.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DCDD01BD293A5005C37E3 /* twtrLogIn.png */; settings = {ASSET_TAGS = (); }; };
+		A11DCDD51BD29ABA005C37E3 /* AccountTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DCDD41BD29ABA005C37E3 /* AccountTypeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A11DCDD71BD2A693005C37E3 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DCDD61BD2A693005C37E3 /* ProductViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A1A2E9CB1BD3C9DB00589DED /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2E9CA1BD3C9DB00589DED /* cell.swift */; settings = {ASSET_TAGS = (); }; };
+		A1A2E9CD1BD3CB0800589DED /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2E9CC1BD3CB0800589DED /* FeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A1C22FF11BD40A1D0055DBCA /* LinkViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C22FF01BD40A1D0055DBCA /* LinkViewViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A1DB755B1BCE622F00C1187A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB755A1BCE622F00C1187A /* Accounts.framework */; };
 		A1DB755D1BCE623500C1187A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB755C1BCE623500C1187A /* Social.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +47,12 @@
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		81BA81821A49E27F00E65899 /* ParseStarterProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ParseStarterProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		A11DCDD01BD293A5005C37E3 /* twtrLogIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twtrLogIn.png; sourceTree = "<group>"; };
+		A11DCDD41BD29ABA005C37E3 /* AccountTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTypeViewController.swift; sourceTree = "<group>"; };
+		A11DCDD61BD2A693005C37E3 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		A1A2E9CA1BD3C9DB00589DED /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		A1A2E9CC1BD3CB0800589DED /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		A1C22FF01BD40A1D0055DBCA /* LinkViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkViewViewController.swift; sourceTree = "<group>"; };
 		A1DB755A1BCE622F00C1187A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		A1DB755C1BCE623500C1187A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -87,9 +99,15 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				A11DCDD01BD293A5005C37E3 /* twtrLogIn.png */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
+				A1C22FF01BD40A1D0055DBCA /* LinkViewViewController.swift */,
+				A1A2E9CC1BD3CB0800589DED /* FeedTableViewController.swift */,
+				A1A2E9CA1BD3C9DB00589DED /* cell.swift */,
+				A11DCDD61BD2A693005C37E3 /* ProductViewController.swift */,
+				A11DCDD41BD29ABA005C37E3 /* AccountTypeViewController.swift */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
 			);
@@ -190,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11DCDD11BD293A5005C37E3 /* twtrLogIn.png in Resources */,
 				81BA81501A49DA1800E65899 /* Main.storyboard in Resources */,
 				81BA81521A49DA1800E65899 /* Images.xcassets in Resources */,
 			);
@@ -219,7 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C22FF11BD40A1D0055DBCA /* LinkViewViewController.swift in Sources */,
+				A11DCDD51BD29ABA005C37E3 /* AccountTypeViewController.swift in Sources */,
+				A1A2E9CD1BD3CB0800589DED /* FeedTableViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
+				A11DCDD71BD2A693005C37E3 /* ProductViewController.swift in Sources */,
+				A1A2E9CB1BD3C9DB00589DED /* cell.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
