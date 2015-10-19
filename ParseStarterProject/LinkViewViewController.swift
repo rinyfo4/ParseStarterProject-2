@@ -11,22 +11,29 @@ import UIKit
 class LinkViewViewController: UIViewController {
 
     
+
     var url: NSURL?
+    
+       // let rightConstraint = NSLayoutConstraint(item: doneOutlet, attribute: .Right, relatedBy: .Equal, toItem: doneOutlet.superview, attribute: .Right, multiplier: 1, constant: 0.5)
 
     @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {
      
-        print(url)
+
         
-        let URLRequest = NSURLRequest(URL:(self.url)!)
+        //print(url)
+        
+      //  let URLRequest = NSURLRequest(URL:(self.url)!)
        
         
-        self.webView.loadRequest(URLRequest)
+       // self.webView.loadRequest(URLRequest)
     
     }
     override func didReceiveMemoryWarning() {
         
     }
+    
+
 
 }

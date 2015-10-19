@@ -33,10 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         Parse.enableLocalDatastore()
-        Parse.setApplicationId("XNudlS68T8DnMZiHd4KIfGd4QjncHqIOzwpdwD14",
-            clientKey: "fxniumJL5cs35RQRXpCf6uUYIy2V14fYTJ89NDXf")
+        Parse.setApplicationId("",
+            clientKey: "")
         
-        PFTwitterUtils.initializeWithConsumerKey("k2e9FocQHsreZ79ZjHBiXKhEj", consumerSecret:"rI1FCuvMPqdTNCOGAt8dI5gK3OT2TulDJUYl8PLzkDUm0AuoLP")
+        PFTwitterUtils.initializeWithConsumerKey("", consumerSecret:"")
         
         
         PFUser.enableAutomaticUser()
