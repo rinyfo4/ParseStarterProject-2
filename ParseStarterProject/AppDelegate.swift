@@ -11,6 +11,9 @@ import UIKit
 
 import Bolts
 import Parse
+import Fabric
+import Crashlytics
+
 
 // If you want to use any of the UI components, uncomment this line
 // import ParseUI
@@ -40,6 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         PFUser.enableAutomaticUser()
+        Fabric.with([Crashlytics.self])
+
 
         let defaultACL = PFACL();
 

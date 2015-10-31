@@ -11,16 +11,37 @@ import UIKit
 class LinkViewViewController: UIViewController {
 
     
+<<<<<<< Updated upstream
 
     var url: NSURL?
     
        // let rightConstraint = NSLayoutConstraint(item: doneOutlet, attribute: .Right, relatedBy: .Equal, toItem: doneOutlet.superview, attribute: .Right, multiplier: 1, constant: 0.5)
+=======
+  
+    @IBOutlet weak var barButtonItem: UIBarButtonItem!
+>>>>>>> Stashed changes
 
+    
+    
+   
     @IBOutlet weak var webView: UIWebView!
+  
+
+    var url: NSURL?
+    
+
+    
+    
+    
 
     override func viewDidLoad() {
      
+<<<<<<< Updated upstream
 
+=======
+        
+        print(url)
+>>>>>>> Stashed changes
         
         //print(url)
         
